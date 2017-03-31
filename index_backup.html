@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>天天e鲜 - eFresh Go Ltd.</title>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" >
+
+	<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- Heder logo and  Banner -->
+  <div id="headerWrapper">
+<div id="polina">
+<img src="images/logo.png" alt="天天e鲜 - eFresh Go Ltd" class="logo">
+<h1 style="font-family: Microsoft YaHei;letter-spacing: 1px;color: #0b9444;">天天<span class="brand-color">e</span>鲜 - <span class="brand-color">e</span>Fresh Go Ltd</h1>
+<a href="cn.html"><button><img src="images/canada.png" alt="" height="21" width="42">&nbsp;中文</button></a>
+<a href="eng.html"><button>ENGLISH&nbsp;<img src="images/canada.png" alt="" height="21" width="42"></button></a>
+</div>
+  </div>
+    <script type="text/javascript">
+    var type=navigator.appName
+    if (type=="Netscape"){
+    var lang = navigator.language
+    }
+    else{
+    var lang = navigator.userLanguage
+    }
+    //取得浏览器语言的前两个字母
+    var lang = lang.substr(0,2)
+    // 英语
+    if (lang == "en"){
+    window.location.href="http://efreshgo.com/eng.html"
+    }
+    // 中文 - 不分繁体和简体
+    else if (lang == "zh"){
+    window.location.href="http://efreshgo.com/cn.html"
+    //  注释掉了上面跳转,不然会陷入无限循环
+    }
+    // 除上面所列的语言
+    else{
+    window.location.href="http://efreshgo.com/cn.html"
+    }
+    </script>
+  
+  </body>
+</html>
+<head>
